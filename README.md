@@ -1,45 +1,24 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+#Mini Project
 
-Welcome USER_NAME,
+Task manager mini project creating a database using MongoDB, Flask and frontend framework Materialize.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+HTML based user interface to demonstate CRUD calls in action
 
-## Gitpod Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-## Updates Since The Instructional Video
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
----
-
-Happy coding!
+The home page of our task manager application displays a summary of tasks.
+That summary information is comprised of the task name, due date, whether or not it's an
+urgent task, and once we click to expand more, we see the task category, description, and
+creator.
+Using one of dependencies that come with Flask, we'll then learn rudimentary user authentication
+and authorization.
+Users will be able to register, see their profile, log out, and log back in again.
+Registered users will also be able to add a new task, which includes selecting a due
+date using Materialize's datepicker component, and toggling a switch to mark the task as
+urgent.
+Users will also be able to edit tasks, but will only be permitted to edit their own tasks,
+not any of the tasks submitted by others.
+In addition to editing their tasks, users will be able to delete their own tasks as
+well.
+Whether a user is logged in or not, we'll also learn how to build a basic search function,
+which will filter tasks based on the user's query.
+You will also see how to manage the task categories list, but make it secure to only be available
+to an Admin user. Consistency in the use of Materialize framework allows the app to be fully responsive by using their grid based classes.
