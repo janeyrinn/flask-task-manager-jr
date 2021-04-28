@@ -2,8 +2,6 @@
 {% extends "base.html" %}
 <!--Tells which block we're injecting our code into -->
 {% block content %}
-
-<h2>I'm extending the base template </h2>
     <!-- Loops through items found by find()-->
     {% for task in tasks %}
         {{ task.task_name }}<br>
