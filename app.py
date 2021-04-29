@@ -4,6 +4,7 @@ from flask import (
 from flask_pymongo import PyMongo
 # Renders bson format from Pymongo
 from bson.objectid import ObjectId
+from werkzeug.security import generate_password_hash, check_password_hash
 if os.path.exists("env.py"):
     import env
 
@@ -27,6 +28,11 @@ def get_tasks():
     # will generate date from our tasks collection
     tasks = mongo.db.tasks.find()
     return render_template("tasks.html", tasks=tasks)
+
+# Authentication function
+@app.route("/register", methods=["GET", "POST"])
+def register():
+    return render_template("register.html")
 
 
 if __name__ == "__main__":
